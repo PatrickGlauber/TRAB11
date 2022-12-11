@@ -22,7 +22,7 @@ int comparar(void* x, void* y){
 //Print para a estrutura
 void print(void** vetor, int num){
 	int i;
-	printf("VETOR DE %d TAMANHO:\n", num);
+	printf("VETOR DE %d TAMANHO:\n", num);		//Imprime o tamanho do vetor baseado nos dados dentro do vetor
 	for(i = 0; i < num; i++){
 		printf(" %d ", *((int*)vetor[i]));
 	}
@@ -36,7 +36,7 @@ int main(){
    	int i;
 
    	printf("INCLUINDO... \n");
-	for(i = 0; i < 10; i++){
+	for(i = 0; i < 10; i++){			//chama a função adicionar 10 vezes a cada novo elemento inserido
 		novoelem = malloc(sizeof(int));
 		*novoelem = i*10;
 		adicionar(vetor, novoelem);
